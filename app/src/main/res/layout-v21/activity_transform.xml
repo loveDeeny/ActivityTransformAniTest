@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.deeny.test.activitytransformanitest.TransformActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:transitionName="share"
+        android:background="?android:colorPrimary"/>
+    <Button
+        android:id="@+id/fab_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transitionName="fab"
+        android:layout_below="@id/view"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-10dp"
+        android:elevation="5dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+</RelativeLayout>
